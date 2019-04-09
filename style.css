@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(2,11,40);
+  color: white;
+}
+
+.hero {
+  background: url(images/desktophero.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+@media only screen and (max-width: 600px) {
+  .hero {
+    background: url(images/mobilehero.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+  i {
+    padding-top: 17vh;
+  }
+}
+
+#content {
+  height: 120vh;
+  padding-top: 10vh;
+  background: rgb(2,11,40);
+  background: radial-gradient(circle, rgba(2,11,40,1) 0%, rgba(29,61,112,1) 78%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cardo', serif;
+}
+
+.card {
+  background-color:rgba(2,11,40,0.2);
+  box-shadow: 2px 2px 20px 3px #244F84;
+  transition: 1s;
+}
+.card:hover {
+  background-color:rgba(113,200,236,0.4);
+}
+
+.gotLogo {
+  width: 95vw;
+  transition: 0.5s;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+}
+.gotLogo:hover {
+  width: 100vw;
+}
+
+h1 {
+  display: none;
+}
+
+.card.col {
+  margin: 1rem;
+}
+
+i {
+  margin-top: 3vh;
+  font-size: 2rem;
+  color: white;
+}
