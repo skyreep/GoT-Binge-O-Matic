@@ -34,7 +34,7 @@ i {
 }
 
 #content {
-  height: 100vh;
+  height: 120vh;
   padding-top: 10vh;
   background: rgb(2,11,40);
   background: radial-gradient(circle, rgba(2,11,40,1) 0%, rgba(29,61,112,1) 78%);
