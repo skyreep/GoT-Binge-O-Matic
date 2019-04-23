@@ -29,5 +29,5 @@ To enhance the website, follow these steps:
 </ul>
 
 ## Future Work
-while the hero image and content sections are fluid containers and I have built media queries to adjust the background image, the 600px media query won't work on modern high res device displays like iPad and iPhones which have an extremely rich pixel density. As a result I believe I need to implement a new media query that focuses on pixel density rather than pixel based display width. 
+while the hero image and content sections are fluid containers and I have built media queries to adjust the background image, the 600px media query won't work on modern high res device displays like iPad and iPhones which have an extremely rich pixel density. As a result I believe I need to implement a new media query that focuses on pixel density rather than pixel based display width. [UPDATE] This issue was fixed by implementing a media query that changes image based on browser orientation (landscape/portait)
  
