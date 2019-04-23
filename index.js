@@ -26,7 +26,7 @@ var x = setInterval(function() {
   document.getElementById("GOTCountdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
   // If it's still possible to binge every episode before the premiere do the following
-  if (percentTimeReq < 1) {
+  if (percentTimeReq < 1 && percentTimeReq >= 0) {
     // Display the percentage of your remaining time until premiere you'd have to spend bingeing
     document.getElementById("BingePercent").innerHTML = (percentTimeReq * 100).toFixed(2) + "% of your total remaining time until the premiere will need to be spent binging.";
 
@@ -38,7 +38,7 @@ var x = setInterval(function() {
   } else {
     // Display a message if it's impossible to binge
     document.getElementById("BingePercent").innerHTML = "You're too late to binge every episode beforehand!";
-    
+
     // Display another message in lieu of the "binge hours per day" section if it is impossible
     document.getElementById("HoursPerDay").innerHTML = "You're too late to binge every episode beforehand!";
   }
@@ -50,3 +50,8 @@ var x = setInterval(function() {
   }
 }, 1000); //setInterval to update every second
 
+$(".hero").css({ height: $(window).height() + "px" });
+
+$(window).on("resize", function() {
+  $(".hero").css({ height: $(window).height() + "px" });
+});

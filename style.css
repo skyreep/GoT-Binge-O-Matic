@@ -6,13 +6,19 @@ body {
 }
 
 .hero {
-  background: url(images/desktophero.jpg) no-repeat center center fixed;
+  background: url("images/mobilehero.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
 }
+@media only screen and (orientation: landscape)  {
+  .hero {
+    background-image: url("images/desktophero.jpg");
+  }
+}
+
 i {
   margin-top: 3vh;
   font-size: 2rem;
