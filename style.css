@@ -51,13 +51,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gotLogo {
-  width: 95vw;
+  width: 80vw;
   transition: 0.5s;
   padding-top: 15vh;
   padding-bottom: 5vh;
 }
 .gotLogo:hover {
-  width: 100vw;
+  width: 85vw;
 }
 
 h1 {
